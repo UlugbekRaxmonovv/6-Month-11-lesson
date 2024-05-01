@@ -1,0 +1,7 @@
+.banner__swiper video,
+.banner__swiper img{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}

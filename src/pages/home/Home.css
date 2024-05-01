@@ -1,0 +1,12 @@
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+.btn1 >button{
+    padding: 8px 32px;
+    border: none;
+    background-color: rgb(153, 132, 238);
+    border-radius: 4px;
+}
