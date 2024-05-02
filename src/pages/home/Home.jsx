@@ -10,7 +10,7 @@ function Home() {
   const [category,setCategory] = useState('all')
 
   const {data:categories} = useFetch('/products/categories')
-  const {data,loading} = useFetch(`/products/category/${category}?limit=${count * 4}`, count,category)
+  const {data,loading} = useFetch(`/products/category/${category}`,category)
 
  let javob = categories?.data?.map((el,inx) =>(
   <option key={inx} value={el}>{el}</option>
