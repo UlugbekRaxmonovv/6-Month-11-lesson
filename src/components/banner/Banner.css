@@ -1,7 +1,12 @@
-.banner__swiper video,
-.banner__swiper img{
+.banner__swiper{
     position: relative;
+}
+.banner__swiper img{
     width: 100%;
     height: 800px;
     object-fit: cover;
+}
+.a11{
+    position: absolute;
+    margin-top: 20%;
 }

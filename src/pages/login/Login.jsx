@@ -34,13 +34,15 @@ function Login() {
 
   }
   return (
-    <form onSubmit={handleLogin} className='login'>
+   <>
+    {/* <form onSubmit={handleLogin} className='login'>
       <h2>Login</h2>
       <input value={username} onChange={e => setUsername(e.target.value)} type="text" />
       <input value={password} onChange={e => setPassword(e.target.value)} type="password" />
       <button disabled={loading} type='submit'>{loading ? "Loading..." : "Log in"}</button>
       <button type='button' onClick={()=> navigate(-1)}>Go back</button>
-    </form>
+    </form> */}
+   </>
   )
 }
 

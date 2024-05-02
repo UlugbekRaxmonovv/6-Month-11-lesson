@@ -12,10 +12,6 @@ function Home() {
   const {data:categories} = useFetch('/products/categories')
   const {data,loading} = useFetch(`/products/category/${category}`,category)
 
- let javob = categories?.data?.map((el,inx) =>(
-  <option key={inx} value={el}>{el}</option>
-
- ))
 
  
   return (
@@ -23,18 +19,7 @@ function Home() {
         <Banner />
     <div className='home  container'>
 
-    <select value={category}
-          onChange={e => setCategory(e.target.value)}
-           name="" id="">
-        <option value="all">all</option>
-        {javob}
-      </select>
         <Products loading={loading} data={data?.data?.products}/>     
-        <div className="btn">
-          <div className="btn1">
-            <button onClick={() => setCount( p => p + 1)}>Learn more</button>
-          </div>
-        </div>
     </div>
   </>
   )

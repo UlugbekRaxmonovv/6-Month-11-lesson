@@ -8,8 +8,6 @@ import NotFound from './pages/not-found/NotFound'
 import SingleRoute from './pages/single-route/SingleRoute'
 import Admin from './pages/admin/Admin'
 import Auth from './pages/auth/Auth'
-import CreateProduct from './pages/admin/create-product/CreateProduct'
-import ManageProduct from './pages/admin/manage-product/ManageProduct'
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -27,9 +25,6 @@ function App() {
 
       <Route path='/' element={<Auth/>}>
         <Route path='admin' element={<Admin/>}>
-          <Route path='create' element={<CreateProduct/>}/>
-          <Route path='manage' element={<ManageProduct/>}/>
-
       </Route>
       </Route>
 
