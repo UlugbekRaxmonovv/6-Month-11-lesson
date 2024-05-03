@@ -25,6 +25,7 @@ import Stay from '../../components/Stay/Stay';
 const SingleRoute = () => {
     const {id} = useParams()
     const [product, setProduct] = useState(null)
+    const [loading,setLoading] = useState(false)
 
     const[count,setCount] = useState(0)
     const onclick = () =>{
@@ -35,14 +36,22 @@ const SingleRoute = () => {
     }
 
     useEffect(()=>{
+      setLoading(true)
         axios
             .get(`/products/${id}`)
             .then(res => setProduct(res.data))
             .catch(res => console.log(res))
+            .finally(()=>setLoading(false))
     },[])
 
-    if(!product){
-        return  <div className="card-katalog container">
+  
+
+  return (
+    
+    <div>
+      {
+        loading ?  
+        <div className="card-katalog container">
         <div className="card-katalog-link">
           </div>
           <div className="card-katalog-link-row">
@@ -57,10 +66,8 @@ const SingleRoute = () => {
         <div className="card-katalog-link-all"></div>
         <div className="card-katalog-link-al1"></div>
         </div>
-    }
-
-  return (
-    <div>
+        : <></>
+      }
      <div className="all container">
       <div className="SingleRout">
       <div className="SingleRout-all">
