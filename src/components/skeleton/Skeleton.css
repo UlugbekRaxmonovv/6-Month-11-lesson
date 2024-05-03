@@ -2,16 +2,18 @@
 .skeleton__wrapper {
     display: flex;
     justify-content: center;
-    gap: 14px;
+    gap: 35px;
     flex-wrap: wrap;
-    margin-top: 40px;
+   
+    
   }
   
   .skeleton__image {
-    width: 280px;
+    width: 298px;
     height: 250px;
     background: #ddd;
     border-radius: 10px;
+    margin-top: 80px;
   }
   
   .skeleton__title,

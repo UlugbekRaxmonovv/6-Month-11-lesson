@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sedan:ital@0;1&display=swap');
 
 .container{
-    max-width: 1240px;
+    max-width: 1640px;
     width: 100%;
     margin: 0 auto;
 }
@@ -84,7 +84,7 @@ color: #7E7E7E;
     display: flex;
     align-items: center;
     /* flex-wrap: wrap; */
-    gap: 20px;
+    gap: 50px;
     padding: 20px 0;
 }
 .navbar-left-row >img{
@@ -94,7 +94,7 @@ color: #7E7E7E;
     
 }
 .navbar-left-row-all{
-    max-width: 500px;
+    max-width: 700px;
     width: 100%;
 }
 
@@ -181,7 +181,7 @@ padding: 10.5px 0px 10.45px 0px;
     display: flex;
     align-items: center;
     /* flex-wrap: wrap; */
-    gap: 20px;
+    gap:50px;
 }
 .icon-rows >img{
     margin-top:45px;
@@ -235,19 +235,52 @@ padding: 10.5px 0px 10.45px 0px;
 .navbar-search-content{
     width: 100%;
     height: 300px;
-    background-color: rgb(84, 76, 76);
+    background-color: white;
     position: absolute;
     z-index: 200000;
-    overflow: auto;
+    overflow: scroll;
 }
+
 .navbar-search-etim{
 display: flex;
 align-items: center;
-gap: 10px;
+gap: 40px;
 padding: 6px 0;
 border-bottom: 1px solid gray;
-} 
 
+} 
+.search:hover{
+    background-color: #cbcbcb;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search-all{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.search-all >span{
+    color: #253D4E;
+}
+.arr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.arr1 >img{
+    max-width: 300px;
+    width: 100%;
+    height: 150px;
+   
+}
+.arr1 >h1{
+    font-size: 25px;
+    text-align: center;
+    color: red;
+}
 
 
 .navbar-bottom {
@@ -400,12 +433,35 @@ text-align: left;
     } 
  }
  @media(max-width:990px){
+    .icon{
+        position: fixed;
+        bottom: 0;
+        border-top: 1px solid gray;
+        width: 100%;
+        padding: 20px 0;
+        background-color: white;
+    }
+    .navbar-left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-left-row-all{
+        max-width: 900px;
+        width: 100%;
+        padding: 0 10px;
+    }
+    .select{
+        display: none;
+    }
     .navbar-left{
         flex-wrap: wrap;
     }
     .icon-all{
       flex-wrap: wrap;
-      padding:  0 300px;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
     }
     .img{
         display: none;
@@ -447,17 +503,7 @@ text-align: left;
         display: none;
     }
     .select{
-        max-width: 164px;
-        width: 100%;
-        height: 40px;
-        border-radius: 5px ;
-        border: 1px 0px 0px 0px;
-        border: 1px solid #ECECEC;
-        box-shadow: 5px 5px 15px 0px #0000000D;
-        display: flex;
-        align-items: center;
-        padding: 0 10px;
-        margin-left: 80px;   
+       display: none;  
     }
 
     .navbar-bottom {
@@ -480,7 +526,7 @@ text-align: left;
   }
     .navbar-all{
         position: absolute;
-        top: 215px;
+        top:260px;
         left: 0;    
         width: 100%;
         padding: 20px 0;
@@ -508,11 +554,12 @@ text-align: left;
         justify-content: center;
     }
     .icon{
-        position: absolute;
+        position: fixed;
         bottom: 0;
         border-top: 1px solid gray;
         width: 100%;
         padding: 20px 0;
+        background-color: white;
     }
      .phon{
     margin-left: -0%;
@@ -560,7 +607,7 @@ text-align: left;
     }
     .navbar-all{
         position: absolute;
-        top: 295px;
+        top: 355px;
         left: 0;    
         width: 100%;
         padding: 20px 0;
@@ -585,6 +632,28 @@ text-align: left;
 
 
  @media(max-width:600px){
+
+    .navbar-all{
+        position: absolute;
+        top: 355px;
+        left: 0;    
+        width: 100%;
+        padding: 20px 0;
+        background: white;
+        box-shadow: 0 3px 5px #0002;
+        flex-direction: column;
+        gap: 12px;
+        justify-content: center;
+        align-items: center;
+        transition: .3s ease;
+        z-index: 10;
+        transform-origin: top;
+        text-align: left;
+        transform: scaleY(0);
+    }
+    .navbar-all.show{
+        transform: scaleY(1);
+    }
     .navbar-left-row-all{
         max-width: 500px;
         width: 100%;
@@ -607,6 +676,28 @@ text-align: left;
  }
 
  @media(max-width:500px){
+
+    .navbar-all{
+        position: absolute;
+        top: 355px;
+        left: 0;    
+        width: 100%;
+        padding: 20px 0;
+        background: white;
+        box-shadow: 0 3px 5px #0002;
+        flex-direction: column;
+        gap: 12px;
+        justify-content: center;
+        align-items: center;
+        transition: .3s ease;
+        z-index: 10;
+        transform-origin: top;
+        text-align: left;
+        transform: scaleY(0);
+    }
+    .navbar-all.show{
+        transform: scaleY(1);
+    }
     .navbar-left-row-all{
         max-width: 450px;
         width: 100%;
@@ -656,6 +747,9 @@ text-align: left;
          
         
     }
+    .select{
+        display: none;
+    }
     .navbar-search{
         width: 280px;
         height: 51px;
@@ -663,11 +757,12 @@ text-align: left;
     }
 
     .icon{
-        position: absolute;
+        position: fixed;
         bottom: 0;
         border-top: 1px solid gray;
         width: 100%;
         padding: 20px 0;
+        background-color: white;
     }
 
     .icon-all{
@@ -697,12 +792,34 @@ text-align: left;
  }
 
  @media(max-width:400px){
-    .icon{
+    .navbar-all{
         position: absolute;
+        top: 280px;
+        left: 0;    
+        width: 100%;
+        padding: 20px 0;
+        background: white;
+        box-shadow: 0 3px 5px #0002;
+        flex-direction: column;
+        gap: 12px;
+        justify-content: center;
+        align-items: center;
+        transition: .3s ease;
+        z-index: 10;
+        transform-origin: top;
+        text-align: left;
+        transform: scaleY(0);
+    }
+    .navbar-all.show{
+        transform: scaleY(1);
+    }
+    .icon{
+        position: fixed;
         bottom: 0;
         border-top: 1px solid gray;
         width: 100%;
         padding: 10px 0;
+        background-color: white;
     }
     .icon-all{
         display: flex;
@@ -717,11 +834,17 @@ text-align: left;
         height: 51px;
         position: relative;
     }
+    .select{
+        display: none;
+    }
  }
  @media(max-width:380px){
     .navbar-search{
         width: 210px;
         height: 51px;
         position: relative;
+    }
+    .select{
+        display: none;
     }
  }

@@ -1,12 +1,241 @@
+.banner{
+    padding: 50px 0;
+}
 .banner__swiper{
-    position: relative;
+    padding: 20px 0;
 }
 .banner__swiper img{
     width: 100%;
-    height: 800px;
+    height: 60vh;
     object-fit: cover;
 }
-.a11{
-    position: absolute;
-    margin-top: 20%;
+.banner__item-1{
+    background-image: url(../../assets//img/images.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+    border-radius: 30px;
+    padding: 90px 0;
+    width: 100%;
+}
+.banner__item-parag{
+    padding: 0 95px ;
+    h1{
+        max-width: 601.26px;
+        font-family: Quicksand;
+        font-size: 72px;
+        font-weight: 700;
+        line-height: 72px;
+        color: white;
+    }
+    h2{
+        opacity: .6;
+        margin: 35px 0;
+        color: white;
+    }
+    form{
+        max-width: 350px;
+        border-radius: 50px;
+        background-color: #fff;
+        padding: 0 20px ;
+        input{
+            border: none;
+            outline: none;
+
+        }
+        button{
+           border-radius: 50px;
+           padding: 20px; 
+           background-color: #3BB77E;
+           border: 1px solid #3BB77E;
+           color: #fff;
+           position: relative;
+           right: -87px;
+        }
+    }
+}
+.banner__item-2{
+    background-image: url(../../assets//img/pscaled.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+    border-radius: 30px;
+    padding: 90px 0;
+    width: 100%;
+}
+.banner__item-3{
+    background-image: url(../../assets//img/1651708608_58-celes-club-p-krasivaya-zhivaya-priroda-krasivo-foto-67.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    border-radius: 30px;
+    padding: 90px 0;
+    width: 100%;
+}
+@media(max-width:900px){
+    .banner{
+        padding: 50px 10px;
+        
+    }
+}
+
+@media(max-width:600px){
+    .banner{
+        padding: 50px 10px;
+        
+    }
+    .banner__item-1{
+        background-image: url(../../assets//img/images.jpg);
+        background-repeat: repeat;
+        background-size: cover;
+        width: 100%;
+        border-radius: 30px;
+        padding: 90px 0;
+        width: 100%;
+        height: 400px;
+    }
+
+    .banner__item-2{
+        background-image: url(../../assets//img/pscaled.jpg);
+        background-repeat: repeat;
+        background-size: cover;
+        width: 100%;
+        border-radius: 30px;
+        padding: 90px 0;
+        width: 100%;
+        height: 400px;
+    }
+    .banner__item-3{
+        background-image: url(../../assets//img/1651708608_58-celes-club-p-krasivaya-zhivaya-priroda-krasivo-foto-67.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        border-radius: 30px;
+        padding: 90px 0;
+        width: 100%;
+        height: 400px;
+    }
+}
+@media(max-width:500px){
+    .banner__item-parag{
+        padding: 0 95px ;
+        h1{
+            max-width: 601.26px;
+            width: 100%;
+            font-family: Quicksand;
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 42px;
+            color: white;
+            text-align: center;
+        }
+        h2{
+            opacity: .6;
+            margin: 35px 0;
+            color: white;
+            text-align: center;
+        }
+        form{
+            display: flex;
+            max-width: 350px;
+            width: 100%;
+            border-radius: 50px;
+            background-color: #fff;
+            padding: 0 20px ;
+            input{
+                border: none;
+                outline: none;
+    
+            }
+            button{
+               border-radius: 50px;
+               padding: 20px; 
+               background-color: #3BB77E;
+               border: 1px solid #3BB77E;
+               color: #fff;
+               position: relative;
+               right: -47px;
+            }
+        }
+    }
+}
+@media(max-width:400px){
+    .banner{
+        padding: 50px 10px;
+        
+    }
+    .banner__item-1{
+        background-image: url(../../assets//img/images.jpg);
+        background-repeat: repeat;
+        background-size: cover;
+        width: 100%;
+        border-radius: 30px;
+        padding: 50px 0;
+        width: 100%;
+        height: 200px;
+    }
+
+    .banner__item-2{
+        background-image: url(../../assets//img/pscaled.jpg);
+        background-repeat: repeat;
+        background-size: cover;
+        width: 100%;
+        border-radius: 30px;
+        padding: 50px 0;
+        width: 100%;
+        height: 400px;
+    }
+    .banner__item-3{
+        background-image: url(../../assets//img/1651708608_58-celes-club-p-krasivaya-zhivaya-priroda-krasivo-foto-67.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        border-radius: 30px;
+        padding: 50px 0;
+        width: 100%;
+        height: 400px;
+    }
+
+    .banner__item-parag{
+        padding: 0 95px ;
+        overflow: hidden;
+        h1{
+            max-width: 601.26px;
+            width: 100%;
+            font-family: Quicksand;
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 42px;
+            color: white;
+            text-align: center;
+        }
+        h2{
+            opacity: .6;
+            margin: 35px 0;
+            color: white;
+            text-align: center;
+        }
+        form{
+            display: flex;
+            max-width: 400px;
+            width: 100%;
+            border-radius: 50px;
+            background-color: #fff;
+            padding: 0 20px ;
+            input{
+                border: none;
+                outline: none;
+    
+            }
+            button{
+               border-radius: 50px;
+               padding: 20px; 
+               background-color: #3BB77E;
+               border: 1px solid #3BB77E;
+               color: #fff;
+               position: relative;
+               right: 30px;
+            }
+        }
+    }
 }

@@ -1,0 +1,266 @@
+.card-link{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    margin-top: -100px;
+}
+.card-all{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card-row >h1{
+    font-family: Quicksand;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+    color: #253D4E;
+
+}
+.card-row >a{
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: left;
+    color: #253D4E;
+    transition: all .2s linear;
+    
+}
+.card-row >a:hover{
+    color: #3BB77E;
+}
+
+
+.data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    gap: 30px;
+}
+
+.data-link{
+    max-width: 137px;
+    width: 100%;
+    height: 180.19px;
+    border-radius: 10px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    background: #F2FCE4;  
+}
+.data-link:nth-child(2){
+    background: #FFFCEB;
+
+}
+.data-link:nth-child(3){
+    background: #ECFFEC;
+
+
+}
+.data-link:nth-child(4){
+    background: #FEEFEA;
+
+
+}
+.data-link:nth-child(5){
+    background: #FFF3EB;
+
+
+}
+.data-link:nth-child(6){
+    background: #FFF3FF;
+
+
+
+}
+.data-link:nth-child(7){
+    background: #F2FCE4;
+
+
+
+}
+.data-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.data-nav >img{
+    margin-top: 20px;
+}
+.data-link >h1{
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    text-align: center;
+    color: #253D4E;
+ 
+}
+.data-link  >p{
+    font-family: Lato;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+color: #253D4E;
+
+}
+
+
+.hammasi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+
+.hammasi-all{
+    background-image: url('../../assets//img/ban1.png');
+    background-repeat: no-repeat;
+    max-width: 512.66px;
+    width: 100%;
+    height: 300.38px; 
+    gap: 0px;
+    border-radius: 10px;
+
+}
+.hammasi-row1{
+    padding: 80px ;
+}
+.hammasi-row1 >h1{
+    width: 202.92px;
+    height: 100px;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    
+    
+}
+
+.hammasi-row1 >button{
+    width: 103.61px;
+    height: 31.59px;
+    top: 195.39px;
+    left: 50px;
+    padding: 8px 9px 8px 13px;
+    gap: 0px;
+    border-radius: 4px;
+    border: none; 
+font-family: Quicksand;
+font-size: 12px;
+font-weight: 700;
+line-height: 15.6px;
+letter-spacing: 0.5px;
+text-align: center;
+background: #3BB77E;
+color: white;
+
+}
+
+
+.hammasi-all-1:nth-child(2){
+    background-image: url('../../assets/img/ban2.png');
+    background-repeat: no-repeat;
+    max-width: 512.66px;
+    width: 100%;
+    height: 300.38px; 
+    gap: 0px;
+    border-radius: 10px ;
+}
+.hammasi-all-2:nth-child(3){
+    background-image: url('../../assets/img/ban3.png');
+    background-repeat: no-repeat;
+    max-width: 512.66px;
+    width: 100%;
+    height: 300.38px; 
+    gap: 0px;
+    border-radius: 10px ;
+}
+
+@media(max-width:600px){
+    .card-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px 0;
+        margin-top: -100px;
+    }
+    .card-all{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media(max-width:500px){
+    .hammasi-all{
+        background-image: url('../../assets//img/ban1.png');
+        background-repeat: no-repeat;
+        max-width: 475.66px;
+        width: 100%;
+        height: 300.38px; 
+        gap: 0px;
+        border-radius: 10px;
+    
+    }
+    .hammasi-all-1:nth-child(2){
+        background-image: url('../../assets/img/ban2.png');
+        background-repeat: no-repeat;
+        max-width: 475.66px;
+        width: 100%;
+        height: 300.38px; 
+        gap: 0px;
+        border-radius: 10px;
+    }
+    .hammasi-all-2:nth-child(3){
+        background-image: url('../../assets/img/ban3.png');
+        background-repeat: no-repeat;
+        max-width: 475.66px;
+        width: 100%;
+        height: 300.38px; 
+        border-radius: 10px;
+       
+    }
+    
+}
+@media(max-width:400px){
+    .hammasi-all{
+        background-image: url('../../assets//img/ban1.png');
+        background-repeat: no-repeat;
+        max-width: 380.66px;
+        width: 100%;
+        height: 300.38px; 
+        gap: 0px;
+        border-radius: 10px;
+    
+    }
+    .hammasi-all-1:nth-child(2){
+        background-image: url('../../assets/img/ban2.png');
+        background-repeat: no-repeat;
+        max-width: 380.66px;
+        width: 100%;
+        height: 300.38px; 
+        gap: 0px;
+        border-radius: 10px;
+    }
+    .hammasi-all-2:nth-child(3){
+        background-image: url('../../assets/img/ban3.png');
+        background-repeat: no-repeat;
+        max-width: 380.66px;
+        width: 100%;
+        height: 300.38px; 
+        border-radius: 10px;
+       
+    }
+    
+}

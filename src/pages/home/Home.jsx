@@ -3,14 +3,13 @@ import Banner from '../../components/banner/Banner'
 import Products from '../../components/products/Products';
 import './Home.css'
 import { useFetch } from '../../components/Hook/useFetch';
+import Main from '../../components/Main/Main'
+import Stay from '../../components/Stay/Stay';
+import Best from '../../components/Best/Best';
+import Footer from '../../components/Footer/Footer';
 
 function Home() {
-
-  const [count,setCount] = useState(1)
-  const [category,setCategory] = useState('all')
-
-  const {data:categories} = useFetch('/products/categories')
-  const {data,loading} = useFetch(`/products/category/${category}`,category)
+  const {data,loading} = useFetch('/products')
 
 
  
@@ -18,8 +17,18 @@ function Home() {
   <>
         <Banner />
     <div className='home  container'>
+     <Main/>
 
-        <Products loading={loading} data={data?.data?.products}/>     
+
+
+        <Products 
+        loading={loading} 
+        data={data?.data?.products}/>    
+
+        <Stay/> 
+       
+       <Best/>
+       <Footer/>
     </div>
   </>
   )

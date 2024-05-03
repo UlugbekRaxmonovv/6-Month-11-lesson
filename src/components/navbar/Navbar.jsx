@@ -24,17 +24,20 @@ const Navbar = () => {
 
   const [toogli,sitToggli] = useState(false)
 
-  // const {data,loading,arr} = useFetch(`/products/search?q=${vallue}`,vallue)
+  const {data,loading,arr} = useFetch(`/products/search?q=${vallue}`,vallue)
  
-//   const javob = data?.data?.products?.map((el,inx) =>
-//    <Link className='.navbar-search-etim' to={`/product/${el.id}`}>
-// (
-//     <div key={inx} className="search">
-//     <img src={el.images[0]} width={30} alt="" />
-//     <span>{el.title}</span>
-//     </div>
-//   )
-//    </Link> )
+  const javob = data?.data?.products?.map((el,inx) =>
+   <Link className='.navbar-search-etim' to={`/product/${el.id}`}>
+(
+    <div key={inx} className="search">
+      <div className="search-all">
+      <img src={el.images[0]} width={30} alt="" />
+    <span>{el.title}</span>
+      </div>
+ 
+    </div>
+  )
+   </Link> )
   return (
     <>
      <header>
@@ -85,26 +88,20 @@ const Navbar = () => {
           {
             vallue.trim() ?
             <div className="navbar-search-content">
-              {/* {
-               !data?.data?.products?.length ? <p>Mahsulot topilmadi</p> : <></>
-              } */}
-                {/* {javob} */}
+              {
+               !data?.data?.products?.length ? <div className="arr">
+                <div className="arr1">
+                  <img src="https://media.licdn.com/dms/image/C5612AQEPYce5KpNLyg/article-cover_image-shrink_720_1280/0/1551659700811?e=2147483647&v=beta&t=O9mBMiF-V12jCRJwaBNDWLKNL8cku2QSoCXtKP3vCHg" alt="" />
+                  <h1>Mahsulot topilmadi</h1>
+                </div>
+               </div> : <></>
+              }
+                {javob}
             </div>
             : <></>
           }
           
         </div>
-   {/* <input type="text" value={vallue} onChange={(e) => setValue(e.target.value)} placeholder='' />
-   {
-   vallue.trim() ?
-   <div className="navbar-search-content">
-    </div>
-    :
-   <></>
-
-   } */}
-
-
    </div>
    </div>
     <IoSearchOutline />
@@ -142,7 +139,7 @@ const Navbar = () => {
         <p>Cart</p>
       </div>
       <div className="icon-row">
-        <img src={rasm5} alt="" />
+       <NavLink to={"/register"}> <img src={rasm5} alt="" /></NavLink>
         <p><NavLink className='p' to={"/register"}>Account</NavLink></p>
       
       </div>
@@ -236,41 +233,7 @@ const Navbar = () => {
 
     </div>
     <div className="right"></div>
-     
-
-     
-     
   
-     
- 
-
-     {/* <div className='navbar container'>
-        <NavLink to={"/"}>
-            <h2>Navbar</h2>
-        </NavLink>
-     
-        
-        <NavLink className='navbar__link' to={"/about"}>About</NavLink>
-
-
-        <div className="navbar-search">
-          <input
-          value={vallue}
-          onChange={(e) => setValue(e.target.value)}
-          type="text" placeholder='search....' />
-          {
-            vallue.trim() ?
-            <div className="navbar-search-content">
-              {
-               !data?.data?.products?.length ? <p>Mahsulot topilmadi</p> : <></>
-              }
-                {javob}
-            </div>
-            : <></>
-          }
-          
-        </div>
-    </div> */}
      </header>
     </>
   )

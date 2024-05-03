@@ -9,6 +9,7 @@ import SingleRoute from './pages/single-route/SingleRoute'
 import Admin from './pages/admin/Admin'
 import Auth from './pages/auth/Auth'
 
+
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -17,6 +18,7 @@ function App() {
   return (
     <>
      <Navbar/>
+     
      <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/about' element={<About/>}/>

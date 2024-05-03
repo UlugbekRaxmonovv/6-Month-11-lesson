@@ -9,6 +9,7 @@ function Skeleton({count=4}) {
             <div className="skeleton__image skeleton__anime"></div>
             <div className="skeleton__title skeleton__anime"></div>
             <div className="skeleton__price skeleton__anime"></div>
+            <div className="skeleton__price skeleton__anime"></div>
         </div>)
         }
     </div>

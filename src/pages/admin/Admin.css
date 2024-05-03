@@ -1,9 +1,340 @@
-.admin{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 300px 1fr;
+
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sedan:ital@0;1&display=swap');
+body{
+    font-family: "Quicksand", sans-serif;
 }
-.admin__sidebar{
-    height: 100vh;
-    background: dodgerblue;
+.admin-all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 150px 0;
+    gap: 80px;
+}
+.h2{
+    margin-top: -150px;
+    line-height: 155px;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    color: #3BB77E;
+
+}
+.admin-row > h1{
+    width: 384.45px;
+    height: 117.59px;
+    font-family: Quicksand;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    text-align: left;
+    color: #253D4E;
+   
+}
+.admin-row >p{
+    max-width: 405px;
+    width: 100%;
+height: 67px;
+font-family: Lato;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+color:  #7E7E7E;
+
+
+}
+.nav-p >p{
+    margin-top: 20px;
+    max-width: 405px;
+    width: 100%;
+height: 67px;
+font-family: Lato;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+color:  #7E7E7E;
+}
+
+.admin-row >h4{
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: #253D4E;
+    
+}
+.admin-row >p{
+    margin-top: 20px;
+}
+.admin-row > h5{
+    margin-top: 20px;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: #3BB77E;
+    
+}
+.admin-row >h3{
+    margin-top: 20px;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: #253D4E;
+    
+}
+
+
+.map{
+    max-width: 1286px;
+    width: 100%;
+    height: 350px;
+    padding: 20px 0;
+    margin-top: -50px;
+    
+}
+
+
+.column-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 120px 0;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+.column-list-all{
+    max-width: 447.22px;
+    width: 100%;
+    height: 199.39px;
+    
+}
+.column-list-all-row{
+    padding: 0 20px;
+}
+.column-list-all-row >h1{
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    color: #3BB77E;
+
+}
+.column-list-all-row >p{
+    width: 239.28px;
+    height: 89px;
+    top: 46.8px;
+    left: 12px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Lato;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+color: #7E7E7E;
+margin-top: 20px;
+    
+}
+
+.column-list-all-row >button{
+    width: 116.27px;
+    height: 39.59px;
+    top: 159.8px;
+    left: 12px;
+    padding: 12px 18.61px 12.59px 19px;
+    border-radius: 4px;    
+font-family: Quicksand;
+font-size: 12px;
+font-weight: 700;
+line-height: 21.6px;
+letter-spacing: 0.5px;
+text-align: center;
+color: #FFFFFF;
+background: #3BB77E;
+border:none;
+
+
+}
+
+.sorch-all{
+    padding: 0 100px;
+}
+
+.sorch-all >h4{
+    font-family: Quicksand;
+font-size: 20px;
+font-weight: 700;
+line-height: 24px;
+text-align: left;
+color: #3BB77E;
+margin-top: -10px;
+}
+.sorch-all > h1{
+    font-family: Quicksand;
+font-size: 40px;
+font-weight: 700;
+line-height: 48px;
+text-align: left;
+color: #253D4E;
+margin-top: 20px;
+
+}
+.sorch-all >p{
+    font-family: Lato;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+color: #B6B6B6;
+margin-top: 20px;
+
+}
+.sorch-row{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+gap: 200px;
+}
+.sorch-row-all{
+    display: grid;
+    grid-template-columns: 423px 423px;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+   margin-top: 10px;
+   
+}
+.all1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.sorch-row-input{
+    width: 423.22px;
+    height: 64px;
+    top: 1524.63px;
+    left: 301.17px;
+    padding: 0px 3px 0px 21px;
+    border-radius: 10px ;
+    border: 1px 0px 0px 0px;
+    border: 1px solid #ECECEC ;
+    display: flex;  
+    align-items: center;
+}
+input{
+    outline: none;
+    border: none;
+}
+textarea{
+    resize: none;
+    width: 850px;
+    outline: none;
+    margin-top: 20px;
+}
+
+
+
+.Staya{
+    padding: 120px 0;
+}
+@media(max-width:990px){
+    
+.map >img{
+    max-width: 1286px;
+    width: 100%;
+    height: 350px;
+    padding: 20px 0;
+    margin-top: -50px;
+    
+}
+.column-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 120px 0;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+.column-list-all{
+    max-width: 447.22px;
+    width: 100%;
+    height: 199.39px;
+    
+}
+.column-list-all-row{
+    padding: 0 150px;
+}
+}
+
+@media(max-width:800px){
+    .sorch-row-all{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+       margin-top: 10px;
+       
+    } 
+    textarea{
+        max-width:700px;
+        width: 100%;
+    }
+    
+.sorch-all{
+  padding:  0 190px;
+}
+}
+
+@media(max-width:700px){
+    textarea{
+        max-width:600px;
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media(max-width:600px){
+    .sorch-all{
+        padding:  0 90px;
+      }
+    textarea{
+        max-width:500px;
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media(max-width:500px){
+    .sorch-all{
+        padding:  0 40px;
+      }
+    textarea{
+        max-width:450px;
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media(max-width:460px){
+    .sorch-all{
+        padding:  0 40px;
+      }
+    textarea{
+        max-width:400px;
+        width: 100%;
+        padding: 0 20px;
+    }
 }
