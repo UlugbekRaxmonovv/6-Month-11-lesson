@@ -3,7 +3,7 @@
     align-items: center;
     gap: 20px;
     padding: 20px 0;
-    margin-top: -100px;
+    margin-top: -30px;
 }
 .card-all{
     display: flex;
@@ -261,6 +261,14 @@ color: white;
         height: 300.38px; 
         border-radius: 10px;
        
+    }
+    .card-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px 0;
+        margin-top: -10px;
     }
     
 }

@@ -11,8 +11,8 @@ import { Link } from 'react-router-dom';
 
 
 function Login() {
-  const [username, setUsername] = useState("yraigatt3")
-  const [password, setPassword] = useState("sRQxjPfdS")
+  const [username, setUsername] = useState("kminchelle")
+  const [password, setPassword] = useState("0lelplR")
   const [loading, setLoading] = useState(false)
 
   let navigate = useNavigate()

@@ -3,7 +3,8 @@ body{
     font-family: "Sedan", serif;
 }
 .login{
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     height: 483.75px;
     top: 845px;
     left: 39805px;
@@ -137,4 +138,90 @@ color: #777777;
     border: 1px 0px 0px 0px;
     opacity: 0px;
     border: 1px solid #E9E9E9    
+}
+
+
+
+@media(max-width:450px){
+    .login{
+        max-width: 400px;
+        width: 100%;
+        height: 483.75px;
+        top: 845px;
+        left: 39805px;
+        gap: 0px;
+        border-radius: 5px 0px 0px 0px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+        border: 1px solid #E9E9E9;
+        margin: 50px auto;   
+        
+    
+    }
+    .input-rw{
+        padding:  0 40px;
+    }
+    .login input{
+        max-width: 338px;
+        width: 100%;
+    height: 44.38px;
+    top: 125px;
+    left: 31px;
+    padding: 15.19px 13px 12.19px 13px;
+    gap: 0px;
+    border-radius: 5px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+        margin-top: 16px;
+        padding: 0 12px;
+        border-radius: 5px;
+    }
+}
+
+@media(max-width:400px){
+    .login{
+        max-width: 350px;
+        width: 100%;
+        height: 483.75px;
+        top: 845px;
+        left: 39805px;
+        gap: 0px;
+        border-radius: 5px 0px 0px 0px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+        border: 1px solid #E9E9E9;
+        margin: 50px auto;   
+        
+    
+    }
+
+    .input-list{
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+        gap: 2px;
+    }
+    .input-koll >p{
+        margin-left: 60px;
+        font-family: Segoe UI;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+    color: #777777;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    
+    }
+
+
+    .input-kol >p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    
+    }
 }
