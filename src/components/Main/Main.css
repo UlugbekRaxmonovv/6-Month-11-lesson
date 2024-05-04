@@ -185,8 +185,7 @@ color: white;
     gap: 0px;
     border-radius: 10px ;
 }
-
-@media(max-width:600px){
+@media(max-width:1200px){
     .card-link{
         display: flex;
         align-items: center;
@@ -194,7 +193,31 @@ color: white;
         flex-wrap: wrap;
         gap: 20px;
         padding: 20px 0;
-        margin-top: -100px;
+        margin-top: -50px;
+    }
+}
+
+@media(max-width:700px){
+    .card-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px 0;
+        margin-top: -50px;
+    }
+}
+@media(max-width:600px){
+
+    .card-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px 0;
+        margin-top: -50px;
     }
     .card-all{
         display: flex;
@@ -203,6 +226,14 @@ color: white;
     }
 }
 @media(max-width:500px){
+    .card-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px 0;
+        margin-top: -10px;
+    }
     .hammasi-all{
         background-image: url('../../assets//img/ban1.png');
         background-repeat: no-repeat;

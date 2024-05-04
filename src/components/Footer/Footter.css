@@ -182,6 +182,11 @@ ul >h1{
     color: #7E7E7E;
      
 }
+@media(max-width:1200px){
+    .footer-bottom{
+        display: none;
+    }
+}
 
 @media(max-width:900px){
     .footer-all{
